@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Blocker",
+  "version": "1.0",
+  "description": "Blocks all access to YouTube.",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "action": {
+    "default_title": "YouTube Blocker Active"
+  }
+}
